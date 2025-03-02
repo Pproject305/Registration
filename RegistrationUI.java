@@ -1,7 +1,5 @@
 /**
- * RegistrationUI.java
- * This class represents the presentation layer for user registration in an Online Library System.
- * It allows users to register and view their details.
+ 
  */
 
 import java.util.Scanner;

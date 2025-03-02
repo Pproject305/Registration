@@ -1,7 +1,5 @@
 /*
- * UserData.java
- * This class represents the data layer for user registration in an Online Library System.
- * It stores user details and provides methods for retrieving them.
+
  */
 
 import java.util.HashMap;
