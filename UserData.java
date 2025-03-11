@@ -1,13 +1,10 @@
-//
-
-
 
 import java.util.HashMap;
 import java.util.Map;
  
 public class UserData {
     // Simulated database using a HashMap (userId -> User Object)
-    private Map<String, String> registeredUsers = new HashMap<>();
+    private final Map<String, String> registeredUsers = new HashMap<>();
 
     /*
      * Saves user registration details.

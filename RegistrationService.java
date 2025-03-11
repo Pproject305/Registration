@@ -1,7 +1,7 @@
 //
 
 public class RegistrationService {
-    private UserData userData;
+    private final UserData userData;
 
     // Constructor
     public RegistrationService() {

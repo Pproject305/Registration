@@ -1,11 +1,8 @@
-//
-
-
 
 import java.util.Scanner;
 
 public class RegistrationUI {
-    private RegistrationService registrationService;
+    private final RegistrationService registrationService;
 
     // Constructor
     public RegistrationUI() {
@@ -29,7 +26,7 @@ public class RegistrationUI {
             scanner.nextLine(); // Consume newline
 
             switch (choice) {
-                case 1:
+                case 1 -> {
                     System.out.print("Enter User ID: ");
                     String userId = scanner.nextLine();
 
@@ -45,9 +42,9 @@ public class RegistrationUI {
                     } else {
                         System.out.println("Registration failed.");
                     }
-                    break;
+                }
 
-                case 2:
+                case 2 -> {
                     System.out.print("Enter User ID to view details: ");
                     String viewUserId = scanner.nextLine();
 
@@ -57,16 +54,20 @@ public class RegistrationUI {
                     } else {
                         System.out.println("No user found with ID: " + viewUserId);
                     }
-                    break;
+                }
 
-                case 3:
+                case 3 -> {
                     System.out.println("Exiting Registration System. Goodbye!");
                     scanner.close();
                     return;
+                }
 
-                default:
-                    System.out.println("Invalid option. Please try again.");
+                default -> System.out.println("Invalid option. Please try again.");
             }
         }
+    }
+
+    public RegistrationService getRegistrationService() {
+        return registrationService;
     }
 }
