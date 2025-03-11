@@ -8,7 +8,7 @@ public class RegistrationService {
         this.userData = new UserData();
     }
 
-    /**
+    /*
      * Registers a new user by validating and storing their details.
      *
      * @param userId   Unique identifier for the user.
