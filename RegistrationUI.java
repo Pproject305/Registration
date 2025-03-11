@@ -61,7 +61,6 @@ public class RegistrationUI {
                     scanner.close();
                     return;
                 }
-
                 default -> System.out.println("Invalid option. Please try again.");
             }
         }

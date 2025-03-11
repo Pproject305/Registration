@@ -15,7 +15,6 @@ public class UserData {
         registeredUsers.put(userId, userInfo);
         System.out.println("User registered successfully: " + userId);
     }
-
     /*
      * Retrieves user details by ID.
      *
